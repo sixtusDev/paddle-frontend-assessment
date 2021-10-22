@@ -5,23 +5,27 @@ import "./Card.scss";
 
 const Card = ({ image, icon, texts, price, plan, type }) => {
   return type === "plan" ? (
-    <div className="Card">
-      <div>
-        <Image preview={false}></Image>
-      </div>
-      <h3>{plan}</h3>
-      <div>
+    <div className="Card flex-column justify-content-between">
+      <div className="mb20">
+        <img className="Card__image" src={image} alt="card" />
+        <h3 className="app-heading3 mb30">{plan}</h3>
         <div>
           {texts.map((text) => (
-            <>
-              <img src={icon} alt="icon" />
-              <span>{text}</span>
-            </>
+            <div>
+              <img src={icon} alt="icon" className="mr20" />
+              <span className="app-paragraph1">{text}</span>
+            </div>
           ))}
         </div>
       </div>
-      {price ? <div>${price} / mo</div> : <div>Free</div>}
-      <Button type="outline"></Button>
+      <div>
+        {price ? (
+          <div>${price} / mo</div>
+        ) : (
+          <div className="app-heading6 mb20">Free</div>
+        )}
+        <Button type="outline">Select</Button>
+      </div>
     </div>
   ) : (
     <div></div>

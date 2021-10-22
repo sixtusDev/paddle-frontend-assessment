@@ -1,12 +1,14 @@
 import { Row, Col, Image } from "antd";
 import Button from "../../components/Button/Button";
-import Card from "../../components/Card";
+import Card from "../../components/Card/Card";
 import heroImage from "../../assets/hero-image.png";
+import priceImage1 from "../../assets/price-image1.png";
 import pianoImage from "../../assets/piano.png";
 import userIcon from "../../assets/user-icon.svg";
 import locationIcon from "../../assets/location-icon.svg";
 import serverIcon from "../../assets/server-icon.svg";
 import boxIcon from "../../assets/box-icon.svg";
+import checkIcon from "../../assets/check-icon.svg";
 import "./Home.scss";
 
 const Home = () => {
@@ -104,6 +106,26 @@ const Home = () => {
             Let's choose the package that is best for you and explore it happily
             and cheerfully.
           </p>
+        </div>
+        <div>
+          <Row>
+            <Col span={8}>
+              <Card
+                image={priceImage1}
+                icon={checkIcon}
+                texts={[
+                  "Mauris sem neque",
+                  "Mauris sem neque",
+                  "Mauris sem neque",
+                  "Mauris sem neque",
+                ]}
+                plan="Free Plan"
+                type="plan"
+              />
+            </Col>
+            <Col span={8}></Col>
+            <Col span={8}></Col>
+          </Row>
         </div>
       </section>
     </div>

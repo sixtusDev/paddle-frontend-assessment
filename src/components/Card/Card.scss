@@ -1,0 +1,12 @@
+.Card {
+  text-align: center;
+  border: 2px solid #dddddd;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  height: 70rem;
+
+  &__image {
+    height: 20rem;
+  }
+}
