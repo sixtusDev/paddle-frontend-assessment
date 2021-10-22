@@ -1,6 +1,6 @@
 import { Row, Col, Image } from "antd";
 import Button from "../../components/Button/Button";
-
+import Card from "../../components/Card";
 import heroImage from "../../assets/hero-image.png";
 import pianoImage from "../../assets/piano.png";
 import userIcon from "../../assets/user-icon.svg";
@@ -96,6 +96,15 @@ const Home = () => {
             </div>
           </Col>
         </Row>
+      </section>
+      <section className="Plan">
+        <div className="center">
+          <h2 className="app-heading2">Choose Your Plan</h2>
+          <p className="app-paragraph1">
+            Let's choose the package that is best for you and explore it happily
+            and cheerfully.
+          </p>
+        </div>
       </section>
     </div>
   );
