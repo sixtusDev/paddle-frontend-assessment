@@ -1,0 +1,18 @@
+.Header {
+  &__nav-link {
+    line-height: 1.9;
+    color: var(--color-grey2);
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__cta-link {
+    font-weight: 500;
+    line-height: 1.9rem;
+    cursor: pointer;
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,91 @@
+:root {
+  --app-color: #ba55d3;
+  --color-grey1: #e5e5e5;
+  --color-grey2: #4f5665;
+  --color-grey3: #0b132a;
+  --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+// Reusable Classes //
+
+// flex classes
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.app-heading1 {
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 7rem;
+  color: var(--color-grey3);
+}
+
+.app-heading2 {
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 5rem;
+  color: var(--color-grey3);
+}
+
+.app-heading3 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.app-paragraph1 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.app-paragraph2 {
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
