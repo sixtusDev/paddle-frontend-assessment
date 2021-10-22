@@ -20,7 +20,10 @@ const Card = ({ image, icon, texts, price, plan, type }) => {
       </div>
       <div>
         {price ? (
-          <div>${price} / mo</div>
+          <div className="mb20">
+            <span className="app-heading6">${price}</span>
+            <span className="app-paragraph1">/ mo</span>
+          </div>
         ) : (
           <div className="app-heading6 mb20">Free</div>
         )}

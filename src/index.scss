@@ -28,6 +28,10 @@ body {
 }
 
 // Reusable Classes //
+.container {
+  max-width: 115rem;
+  margin: 0 auto;
+}
 
 // flex classes
 .flex-row {
@@ -86,6 +90,10 @@ body {
 
 .mb50 {
   margin-bottom: 5rem;
+}
+
+.mb70 {
+  margin-bottom: 7rem;
 }
 
 .mb100 {

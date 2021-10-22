@@ -1,9 +1,11 @@
-.Home {
-  padding: 3rem 0;
+.Hero {
+  padding: 3rem auto;
 }
 
 .Stats {
   padding: 5rem 0;
+  max-width: 115rem;
+  margin: 0 auto;
   border-radius: 1rem;
   border-radius: 10px;
   box-shadow: 0 2rem 4rem rgba($color: #000, $alpha: 0.1);
@@ -19,4 +21,17 @@
 
 .Plan {
   background-color: var(--color-grey1);
+  padding: 6rem 0 10rem 0;
+}
+
+.Sponsors {
+  padding: 6rem 0;
+
+  &__text-box {
+    max-width: 40rem;
+    margin: 0 auto 7rem auto;
+  }
+  &__logo {
+    height: 7rem;
+  }
 }

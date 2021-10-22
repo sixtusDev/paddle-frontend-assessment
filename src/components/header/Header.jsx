@@ -6,6 +6,7 @@ import logo from "../../assets/logo.svg";
 const Header = () => {
   return (
     <header className="Header flex-row justify-content-between">
+      {/* <div className="container"> */}
       <img src={logo} alt="logo" className="Header__image" />
 
       <nav className="Header__nav">
@@ -26,6 +27,7 @@ const Header = () => {
         <span className="Header__cta-link">Sign In</span>
         <Button type="outline">Sign Up</Button>
       </div>
+      {/* </div> */}
     </header>
   );
 };
