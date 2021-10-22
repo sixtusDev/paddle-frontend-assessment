@@ -1,16 +1,23 @@
 .Button {
-  padding: 0.5rem 3rem;
+  padding: 1rem 4rem;
   outline: none;
+  border: none;
   line-height: 1.9;
   border-radius: 4px;
-
-  span {
-    font-weight: 500 !important;
-  }
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 500;
 
   &-outline {
     border: 4px solid var(--app-color);
     color: var(--app-color);
     background-color: var(--color-white);
+  }
+
+  &-solid {
+    background-color: var(--app-color);
+    color: var(--color-white);
+    font-weight: bold;
+    box-shadow: 0 2rem 4rem rgba($color: #000, $alpha: 0.2);
   }
 }

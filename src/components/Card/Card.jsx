@@ -14,9 +14,16 @@ const Card = ({
   name,
   location,
   rating,
+  active,
 }) => {
   return type === "plan" ? (
-    <div className="CardPrice flex-column justify-content-between">
+    <div
+      className={
+        active
+          ? "CardPrice flex-column justify-content-between active"
+          : "CardPrice flex-column justify-content-between"
+      }
+    >
       <div className="mb20">
         <img className="CardPrice__image" src={image} alt="card" />
         <h3 className="app-heading3 mb30">{plan}</h3>
@@ -38,7 +45,7 @@ const Card = ({
         ) : (
           <div className="app-heading6 mb20">Free</div>
         )}
-        <Button type="outline">Select</Button>
+        <Button type={active ? "solid" : "outline"}>Select</Button>
       </div>
     </div>
   ) : (

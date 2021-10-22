@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <div className="container">
-        <Row gutter={50}>
+        <Row gutter={100} justify="space-between">
           <Col span={6}>
             <div>
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" className="mb10" />
               <p className="app-paragraph">
                 Praesent mollis lobortis nisl nec laoreet. Duis euismod nisl nec
                 ante egestas ullamcorper. Duis id mauris consequat, ultrices

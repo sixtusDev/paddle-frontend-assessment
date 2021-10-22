@@ -178,6 +178,7 @@ const Home = () => {
                   plan="Premium Plan"
                   type="plan"
                   price="12"
+                  active
                 />
               </Col>
             </Row>
@@ -254,9 +255,15 @@ const Home = () => {
           </Row>
         </div>
         <div className="container">
-          <div className="flex-row justify-content-end mt20">
-            <img src={arrowLeftIcon} alt="arrow" />
-            <img src={arrowRightIcon} alt="arrow" />
+          <div className="flex-row justify-content-end mt20 mb50">
+            <img src={arrowLeftIcon} alt="arrow" className="mr10" />
+            <div className="arrow-right">
+              <img
+                className="arrow-right-image"
+                src={arrowRightIcon}
+                alt="arrow right"
+              />
+            </div>
           </div>
         </div>
       </section>

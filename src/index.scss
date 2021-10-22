@@ -69,6 +69,22 @@ body {
   align-items: center;
 }
 
+.arrow-right {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--app-color);
+  position: relative;
+}
+
+.arrow-right-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .center {
   text-align: center;
 }
