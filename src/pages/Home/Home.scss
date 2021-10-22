@@ -35,3 +35,28 @@
     height: 7rem;
   }
 }
+
+.Testimony {
+  &__container {
+    max-width: 125rem;
+    margin: 0 0 0 auto;
+  }
+  &__text-box {
+    max-width: 40rem;
+    margin: 0 auto 7rem auto;
+  }
+}
+
+.Subscribe {
+  padding: 4rem 3rem;
+  max-width: 115rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem rgba($color: #000, $alpha: 0.1);
+  background-color: var(--color-white);
+
+  &__text-box {
+    width: 40rem;
+  }
+}

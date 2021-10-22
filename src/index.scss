@@ -25,6 +25,7 @@ body {
   color: var(--color-grey2);
   font-size: 1.6rem;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 // Reusable Classes //
@@ -58,6 +59,10 @@ body {
 
 .justify-content-around {
   justify-content: space-around;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .align-items-center {
@@ -98,6 +103,10 @@ body {
 
 .mb100 {
   margin-bottom: 10rem;
+}
+
+.mt20 {
+  margin-top: 2rem;
 }
 
 .app-heading1 {

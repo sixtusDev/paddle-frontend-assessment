@@ -16,6 +16,12 @@ import amazon from "../../assets/amazon.png";
 import discord from "../../assets/discord.png";
 import reddit from "../../assets/reddit.png";
 import spotify from "../../assets/spotify.png";
+import user1 from "../../assets/user1.png";
+import user2 from "../../assets/user2.png";
+import user3 from "../../assets/user3.png";
+import starIcon from "../../assets/star-icon.svg";
+import arrowRightIcon from "../../assets/arrow-right.svg";
+import arrowLeftIcon from "../../assets/arrow-left.svg";
 import "./Home.scss";
 
 const Home = () => {
@@ -194,6 +200,78 @@ const Home = () => {
             <img className="Sponsors__logo" src={amazon} alt="amazon" />
             <img className="Sponsors__logo" src={discord} alt="discord" />
             <img className="Sponsors__logo" src={spotify} alt="spotify" />
+          </div>
+        </div>
+      </section>
+      <section className="Testimony">
+        <div className="container">
+          <div className="Testimony__text-box center">
+            <h2 className="app-heading2">
+              Trusted by Thousands of Happy Customer
+            </h2>
+            <p className="app-paragraph1">
+              Nam laoreet cursus diam, sed tristique arcu semper non.
+              Suspendisse et suscipit est, nec laoreet mi. Nunc pellentesque
+              imperdiet ultricies.
+            </p>
+          </div>
+        </div>
+        <div className="Testimony__container">
+          <Row gutter={20}>
+            <Col span={8}>
+              <Card
+                type="testimony"
+                icon={starIcon}
+                image={user1}
+                text="“Mauris sem neque, ultrices nec sapien id, consequat laoreet dolor. Ut rhoncus sollicitudin metus, ac lobortis felis dignissim et. Fusce arcu ex”"
+                name="Sixtus Innocent"
+                location="Lagos, Nigeria"
+                rating="4.5"
+              />
+            </Col>
+            <Col span={8}>
+              <Card
+                type="testimony"
+                icon={starIcon}
+                image={user2}
+                text="“Mauris sem neque, ultrices nec sapien id, consequat laoreet dolor. Ut rhoncus sollicitudin metus, ac lobortis felis dignissim et. Fusce arcu ex”"
+                name="Yessica Christy"
+                location="Shanxi, China"
+                rating="4.5"
+              />
+            </Col>
+            <Col span={8}>
+              <Card
+                type="testimony"
+                icon={starIcon}
+                image={user3}
+                text="“Mauris sem neque, ultrices nec sapien id, consequat laoreet dolor. Ut rhoncus sollicitudin metus, ac lobortis felis dignissim et. Fusce arcu ex”"
+                name="Kim Young Jou"
+                location="Kim Young Jou"
+                rating="4.5"
+              />
+            </Col>
+          </Row>
+        </div>
+        <div className="container">
+          <div className="flex-row justify-content-end mt20">
+            <img src={arrowLeftIcon} alt="arrow" />
+            <img src={arrowRightIcon} alt="arrow" />
+          </div>
+        </div>
+      </section>
+      <section className="Subscribe">
+        <div className="container">
+          <div className="flex-row justify-content-between align-items-center">
+            <div className="Subscribe__text-box">
+              <h2 className="app-heading2">
+                Subscribe Now for Get Special Features!
+              </h2>
+              <p className="app-paragraph1">
+                Praesent mollis lobortis nisl nec laoreet.
+              </p>
+            </div>
+            <Button type="solid">Subscribe Now</Button>
           </div>
         </div>
       </section>

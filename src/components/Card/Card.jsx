@@ -3,11 +3,22 @@ import Button from "../Button/Button";
 
 import "./Card.scss";
 
-const Card = ({ image, icon, texts, price, plan, type }) => {
+const Card = ({
+  image,
+  icon,
+  texts,
+  price,
+  plan,
+  type,
+  text,
+  name,
+  location,
+  rating,
+}) => {
   return type === "plan" ? (
-    <div className="Card flex-column justify-content-between">
+    <div className="CardPrice flex-column justify-content-between">
       <div className="mb20">
-        <img className="Card__image" src={image} alt="card" />
+        <img className="CardPrice__image" src={image} alt="card" />
         <h3 className="app-heading3 mb30">{plan}</h3>
         <div>
           {texts.map((text) => (
@@ -31,7 +42,24 @@ const Card = ({ image, icon, texts, price, plan, type }) => {
       </div>
     </div>
   ) : (
-    <div></div>
+    <div className="CardTestimony">
+      <div className="flex-row align-items-center mb20">
+        <div className="flex-row align-items-center flex1">
+          <img className="CardTestimony__image mr10" src={image} alt="user1" />
+          <div className="flex-column align-content-center">
+            <span className="app-heading3" style={{ marginBottom: "-10px" }}>
+              {name}
+            </span>
+            <span className="app-paragraph2">{location}</span>
+          </div>
+        </div>
+        <div className="flex-row align-items-center">
+          <span className="mr10">{rating}</span>
+          <img src={icon} alt="icon" />
+        </div>
+      </div>
+      <div className="app-paragraph1">{text}</div>
+    </div>
   );
 };
 

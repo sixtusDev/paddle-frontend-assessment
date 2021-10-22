@@ -1,4 +1,4 @@
-.Card {
+.CardPrice {
   text-align: center;
   border: 2px solid #dddddd;
   background-color: var(--color-white);
@@ -8,5 +8,14 @@
 
   &__image {
     height: 20rem;
+  }
+}
+
+.CardTestimony {
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+  padding: 3rem;
+  &__image {
+    height: 6rem;
   }
 }
