@@ -1,3 +1,18 @@
 .Home {
   padding: 3rem 0;
 }
+
+.Stats {
+  padding: 5rem 0;
+  border-radius: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2rem 4rem rgba($color: #000, $alpha: 0.1);
+  background-color: var(--color-white);
+  &__details {
+    border-right: 2px solid #eeeff2 !important;
+  }
+}
+
+.Features {
+  padding: 10rem 0;
+}
