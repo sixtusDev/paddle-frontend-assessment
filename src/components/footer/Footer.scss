@@ -1,0 +1,10 @@
+.Footer {
+  background-color: var(--color-grey1);
+  padding: 20rem 0 10rem 0;
+
+  &__copy {
+    font-size: 16px;
+    line-height: 30px;
+    color: #afb5c0;
+  }
+}

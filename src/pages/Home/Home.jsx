@@ -262,7 +262,7 @@ const Home = () => {
       </section>
       <section className="Subscribe">
         <div className="container">
-          <div className="flex-row justify-content-between align-items-center">
+          <div className="flex-row justify-content-between align-items-center Subscribe__items">
             <div className="Subscribe__text-box">
               <h2 className="app-heading2">
                 Subscribe Now for Get Special Features!
