@@ -30,7 +30,7 @@ const Home = () => {
       <section className="Hero">
         <div className="container">
           <Row>
-            <Col span={12}>
+            <Col xs={24} md={12} className="mb50">
               <h1 className="app-heading1">
                 We Are Everything We Aspire To BE
               </h1>
@@ -41,7 +41,7 @@ const Home = () => {
               </p>
               <Button type="solid">Get Started</Button>
             </Col>
-            <Col span={12}>
+            <Col xs={24} md={12}>
               <Image preview={false} src={heroImage} alt="Hero" />
             </Col>
           </Row>
@@ -91,10 +91,10 @@ const Home = () => {
       <section className="Features">
         <div className="container">
           <Row gutter={20}>
-            <Col span={12}>
+            <Col xs={24} md={8} className="mb30">
               <Image preview={false} src={pianoImage} />
             </Col>
-            <Col span={12}>
+            <Col xs={24} md={8}>
               <div className="Features__right">
                 <h2 className="app-heading2">Features We Provide For You</h2>
                 <p className="app-paragraph1">
@@ -143,7 +143,7 @@ const Home = () => {
           </div>
           <div>
             <Row gutter={20}>
-              <Col span={8}>
+              <Col xs={24} md={8} className="mb30">
                 <Card
                   image={priceImage1}
                   icon={checkIcon}
@@ -157,7 +157,7 @@ const Home = () => {
                   type="plan"
                 />
               </Col>
-              <Col span={8}>
+              <Col xs={24} md={8} className="mb30">
                 <Card
                   image={priceImage2}
                   icon={checkIcon}
@@ -173,7 +173,7 @@ const Home = () => {
                   price="9"
                 />
               </Col>
-              <Col span={8}>
+              <Col xs={24} md={8}>
                 <Card
                   image={priceImage3}
                   icon={checkIcon}
@@ -231,7 +231,7 @@ const Home = () => {
         </div>
         <div className="Testimony__card-wrapper">
           <Row gutter={20}>
-            <Col span={8}>
+            <Col xs={24} md={8} className="mb30">
               <Card
                 type="testimony"
                 icon={starIcon}
@@ -243,7 +243,7 @@ const Home = () => {
                 active
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} md={8} className="mb30">
               <Card
                 type="testimony"
                 icon={starIcon}
@@ -254,7 +254,7 @@ const Home = () => {
                 rating="4.5"
               />
             </Col>
-            <Col span={8}>
+            <Col xs={24} md={8}>
               <Card
                 type="testimony"
                 icon={starIcon}
@@ -283,7 +283,7 @@ const Home = () => {
       <section className="Subscribe">
         <div className="container">
           <div className="Subscribe__inner">
-            <div className="flex-row justify-content-between align-items-center Subscribe__items">
+            <div className="flex-row justify-content-between align-items-center Subscribe__items flex-wrap">
               <div className="Subscribe__text-box">
                 <h2 className="app-heading2">
                   Subscribe Now for Get Special Features!

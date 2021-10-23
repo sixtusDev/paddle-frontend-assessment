@@ -4,7 +4,12 @@
   background-color: var(--color-white);
   border-radius: 1rem;
   padding: 3rem 2rem;
-  height: 65rem;
+  min-height: 65rem;
+
+  @media (max-width: 767px) {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
 
   &__image {
     width: 60%;

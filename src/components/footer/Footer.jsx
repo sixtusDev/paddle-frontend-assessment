@@ -6,18 +6,19 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <div className="container">
-        <Row gutter={20} justify="space-between">
-          <Col span={6}>
+        <Row gutter={30} justify="space-between">
+          <Col xs={24} sm={12} md={12} className="mb10">
             <div>
-              <img src={logo} alt="logo" className="mb10" />
+              <img src={logo} alt="logo" className="mb30" />
               <p className="app-paragraph">
                 Praesent mollis lobortis nisl nec laoreet. Duis euismod nisl nec
                 ante egestas ullamcorper. Duis id mauris consequat, ultrices
-                ligula at, laoreet mag.
+                ligula at, laoreet mag. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Nisi, repudiandae.
               </p>
             </div>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={4} md={4} className="mb30">
             <div>
               <h3 className="app-heading3">Product</h3>
               <p className="app-paragraph1">Praesent</p>
@@ -26,7 +27,7 @@ const Footer = () => {
               <p className="app-paragraph1">Praesent</p>
             </div>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={4} md={4} className="mb30">
             <div>
               <h3 className="app-heading3">Engage</h3>
               <p className="app-paragraph1">Praesent</p>
@@ -35,7 +36,7 @@ const Footer = () => {
               <p className="app-paragraph1">Praesent</p>
             </div>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={4} md={4}>
             <div>
               <h3 className="app-heading3">Earn Money</h3>
               <p className="app-paragraph1">Praesent</p>

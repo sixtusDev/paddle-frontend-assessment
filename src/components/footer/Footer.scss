@@ -6,6 +6,10 @@
     padding: 20rem 3rem 10rem 3rem;
   }
 
+  @media (max-width: 575px) {
+    text-align: center;
+  }
+
   &__copy {
     font-size: 16px;
     line-height: 30px;
