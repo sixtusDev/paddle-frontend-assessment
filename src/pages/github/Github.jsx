@@ -1,43 +1,58 @@
 import { useState, useEffect } from "react";
-import { Card } from "antd";
+import { Card, Pagination, Spin, notification } from "antd";
 import { getMostStarredRepos } from "../../services/apiServices/gitHubServices";
 import "./Github.scss";
 
 const Github = () => {
   const [mostStarredRepos, setMostStarredRepos] = useState([]);
-
+  const [pageCount, setPageCount] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
+  const handleNextPage = (page) => {
+    setCurrentPage(page);
+  };
+
+  const fetchMostStarredRepos = async (pageNumber) => {
+    try {
+      setLoading(true);
+      const { data } = await getMostStarredRepos(pageNumber);
+      setMostStarredRepos(data.items);
+      setPageCount(data.total_count);
+    } catch (error) {
+      console.log(error.response);
+      notification.error({
+        message: "Error",
+        description:
+          error.response?.data?.message || "An error occured. Please try again",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    const fetchMostStarredRepos = async () => {
-      try {
-        setLoading(true);
-        const { data } = await getMostStarredRepos();
-        console.log(data);
-        setMostStarredRepos(data.items);
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchMostStarredRepos();
-  }, []);
+    fetchMostStarredRepos(currentPage);
+  }, [currentPage]);
+
   return (
     <div className="Github">
-      {loading ? (
-        <div>Loading</div>
-      ) : (
-        mostStarredRepos.length &&
+      {loading && (
+        <div className="spin">
+          <Spin tip="Loading..." size="large" />
+        </div>
+      )}
+      {mostStarredRepos.length > 0 &&
         mostStarredRepos.map(
           ({
+            id,
             owner,
             description,
             name,
             stargazers_count,
             open_issues_count,
           }) => (
-            <div className="Github__card-wrapper">
+            <div className="Github__card-wrapper" id={id}>
               <Card className="Github__card">
                 <div className="flex-row align-items-center">
                   <div className="mr20">
@@ -68,8 +83,16 @@ const Github = () => {
               </Card>
             </div>
           )
-        )
-      )}
+        )}
+      <div className="Github__pagination">
+        {pageCount && (
+          <Pagination
+            defaultCurrent={1}
+            total={340}
+            onChange={handleNextPage}
+          />
+        )}
+      </div>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 .Github {
-  padding: 2rem 0 20rem 0;
+  padding: 2rem 0 10rem 0;
 
   &__card-wrapper {
     max-width: 80rem;
@@ -20,5 +20,12 @@
 
   &__card-img {
     height: 15rem;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 80rem;
+    margin: 0 auto;
   }
 }

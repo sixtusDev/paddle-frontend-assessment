@@ -80,6 +80,19 @@ body {
   justify-content: center;
 }
 
+.spin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .badge {
   background-color: var(--app-color);
   padding: 0.3rem 1rem;

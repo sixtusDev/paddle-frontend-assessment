@@ -1,5 +1,5 @@
 import axios from "axios";
-import { toast } from "react-toastify";
+import { notification } from "antd";
 
 axios.interceptors.response.use(null, (error) => {
   const expectedError =
@@ -9,7 +9,10 @@ axios.interceptors.response.use(null, (error) => {
 
   if (!expectedError) {
     console.log("An unexpected Error occured", error);
-    toast.error("An unexpected error occured");
+    notification.error({
+      message: "Error",
+      description: "An unexpected Error occured",
+    });
   }
   return Promise.reject(error);
 });

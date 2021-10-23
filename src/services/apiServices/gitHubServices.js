@@ -1,8 +1,8 @@
 import axios from "axios";
 import { gitHubMostStarredUrl } from "./urls";
 
-export const getMostStarredRepos = () =>
+export const getMostStarredRepos = (pageNumber) =>
   axios({
     method: "get",
-    url: gitHubMostStarredUrl,
+    url: `${gitHubMostStarredUrl}/&page=${pageNumber}`,
   });
