@@ -40,7 +40,7 @@ const Card = ({
         {price ? (
           <div className="mb20">
             <span className="app-heading6">${price}</span>
-            <span className="app-paragraph1">/ mo</span>
+            <span className="app-paragraph4">/ mo</span>
           </div>
         ) : (
           <div className="app-heading6 mb20">Free</div>
@@ -49,7 +49,7 @@ const Card = ({
       </div>
     </div>
   ) : (
-    <div className="CardTestimony">
+    <div className={active ? "CardTestimony active shadow" : "CardTestimony"}>
       <div className="flex-row align-items-center mb20">
         <div className="flex-row align-items-center flex1">
           <img className="CardTestimony__image mr10" src={image} alt="user1" />

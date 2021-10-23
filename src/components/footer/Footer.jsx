@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <div className="container">
-        <Row gutter={100} justify="space-between">
+        <Row gutter={20} justify="space-between">
           <Col span={6}>
             <div>
               <img src={logo} alt="logo" className="mb10" />

@@ -93,29 +93,37 @@ const Home = () => {
               <Image preview={false} src={pianoImage} />
             </Col>
             <Col span={12}>
-              <h2 className="app-heading2">Features We Provide For You</h2>
-              <p className="app-paragraph1">
-                Curabitur tempor justo non turpis malesuada cursus. Mauris ac
-                libero eu sem finibus lacinia nec pulvinar.
-              </p>
-              <div>
-                <div className="flex-row align-items-center">
-                  <img src={boxIcon} alt="box" className="mr10" />
-                  <span className="app-paragraph2">Curabitur tempor justo</span>
-                </div>
+              <div className="Features__right">
+                <h2 className="app-heading2">Features We Provide For You</h2>
+                <p className="app-paragraph1">
+                  Curabitur tempor justo non turpis malesuada cursus. Mauris ac
+                  libero eu sem finibus lacinia nec pulvinar.
+                </p>
                 <div>
-                  <img src={boxIcon} alt="box" className="mr10" />
-                  <span className="app-paragraph2">
-                    Curabitur tempor justo.
-                  </span>
-                </div>
-                <div>
-                  <img src={boxIcon} alt="box" className="mr10" />
-                  <span className="app-paragraph2">Curabitur tempor justo</span>
-                </div>
-                <div>
-                  <img src={boxIcon} alt="box" className="mr10" />
-                  <span className="app-paragraph2">Curabitur tempor justo</span>
+                  <div className="flex-row align-items-center">
+                    <img src={boxIcon} alt="box" className="mr10" />
+                    <span className="app-paragraph2">
+                      Curabitur tempor justo
+                    </span>
+                  </div>
+                  <div>
+                    <img src={boxIcon} alt="box" className="mr10" />
+                    <span className="app-paragraph2">
+                      Curabitur tempor justo.
+                    </span>
+                  </div>
+                  <div>
+                    <img src={boxIcon} alt="box" className="mr10" />
+                    <span className="app-paragraph2">
+                      Curabitur tempor justo
+                    </span>
+                  </div>
+                  <div>
+                    <img src={boxIcon} alt="box" className="mr10" />
+                    <span className="app-paragraph2">
+                      Curabitur tempor justo
+                    </span>
+                  </div>
                 </div>
               </div>
             </Col>
@@ -124,7 +132,7 @@ const Home = () => {
       </section>
       <section className="Plan">
         <div className="container">
-          <div className="center">
+          <div className="center Plan__text-box">
             <h2 className="app-heading2">Choose Your Plan</h2>
             <p className="app-paragraph1">
               Let's choose the package that is best for you and explore it
@@ -185,7 +193,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="Sponsors">
+      <section className="Sponsors mb70">
         <div className="container">
           <div className="center mb70 Sponsors__text-box">
             <h2 className="app-heading2">Get Started With Paddle Today</h2>
@@ -193,7 +201,9 @@ const Home = () => {
               Praesent mollis lobortis nisl nec laoreet. Duis euismod nisl nec
               ante egestas ullamcorper
             </p>
-            <Button type="solid">Start Today</Button>
+            <div className="mb50">
+              <Button type="solid">Start Today</Button>
+            </div>
           </div>
           <div className="Sponsors__logo-box flex-row align-items-center justify-content-between">
             <img className="Sponsors__logo" src={netflix} alt="netflix" />
@@ -217,7 +227,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="Testimony__container">
+        <div className="Testimony__card-wrapper">
           <Row gutter={20}>
             <Col span={8}>
               <Card
@@ -228,6 +238,7 @@ const Home = () => {
                 name="Sixtus Innocent"
                 location="Lagos, Nigeria"
                 rating="4.5"
+                active
               />
             </Col>
             <Col span={8}>

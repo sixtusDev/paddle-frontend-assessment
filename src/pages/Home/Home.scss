@@ -17,11 +17,21 @@
 
 .Features {
   padding: 10rem 0;
+
+  &__right {
+    max-width: 38rem;
+    margin: 0 0 0 auto;
+  }
 }
 
 .Plan {
   background-color: var(--color-grey1);
   padding: 6rem 0 10rem 0;
+
+  &__text-box {
+    max-width: 55rem;
+    margin: 0 auto 6rem auto;
+  }
 }
 
 .Sponsors {
@@ -37,10 +47,11 @@
 }
 
 .Testimony {
-  &__container {
+  &__card-wrapper {
     max-width: 125rem;
     margin: 0 0 0 auto;
   }
+
   &__text-box {
     max-width: 40rem;
     margin: 0 auto 7rem auto;
