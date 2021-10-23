@@ -13,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/github" component={Github} exact />
+
+        {/* This navigates to home page for non existing paths */}
+        <Route path="*" component={Home} exact />
       </Switch>
       <Footer />
     </div>
