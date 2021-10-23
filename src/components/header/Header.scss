@@ -1,4 +1,7 @@
 .Header {
+  @media (max-width: 120rem) {
+    padding: 0 3rem;
+  }
   &__nav-link {
     line-height: 1.9;
     color: var(--color-grey2);

@@ -49,41 +49,43 @@ const Home = () => {
       </section>
       <section className="Stats">
         <div className="container">
-          <Row>
-            <Col span={8}>
-              <div className="flex-row align-items-center justify-content-center Stats__details">
-                <div className="mr20">
-                  <Image preview={false} src={userIcon} />
+          <div className="Stats__inner">
+            <Row>
+              <Col span={8}>
+                <div className="flex-row align-items-center justify-content-center Stats__details">
+                  <div className="mr20">
+                    <Image preview={false} src={userIcon} />
+                  </div>
+                  <div className="flex-column">
+                    <span className="app-heading4">90+</span>
+                    <span className="app-heading5">Users</span>
+                  </div>
                 </div>
-                <div className="flex-column">
-                  <span className="app-heading4">90+</span>
-                  <span className="app-heading5">Users</span>
+              </Col>
+              <Col span={8}>
+                <div className="flex-row align-items-center justify-content-center Stats__details">
+                  <div className="mr20">
+                    <Image preview={false} src={locationIcon} />
+                  </div>
+                  <div className="flex-column">
+                    <span className="app-heading4">30+</span>
+                    <span className="app-heading5">Locations</span>
+                  </div>
                 </div>
-              </div>
-            </Col>
-            <Col span={8}>
-              <div className="flex-row align-items-center justify-content-center Stats__details">
-                <div className="mr20">
-                  <Image preview={false} src={locationIcon} />
+              </Col>
+              <Col span={8}>
+                <div className="flex-row align-items-center justify-content-center">
+                  <div className="mr20">
+                    <Image preview={false} src={serverIcon} />
+                  </div>
+                  <div className="flex-column">
+                    <span className="app-heading4">50+</span>
+                    <span className="app-heading5">Servers</span>
+                  </div>
                 </div>
-                <div className="flex-column">
-                  <span className="app-heading4">30+</span>
-                  <span className="app-heading5">Locations</span>
-                </div>
-              </div>
-            </Col>
-            <Col span={8}>
-              <div className="flex-row align-items-center justify-content-center">
-                <div className="mr20">
-                  <Image preview={false} src={serverIcon} />
-                </div>
-                <div className="flex-column">
-                  <span className="app-heading4">50+</span>
-                  <span className="app-heading5">Servers</span>
-                </div>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </div>
         </div>
       </section>
       <section className="Features">
@@ -193,7 +195,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="Sponsors mb70">
+      <section className="Sponsors">
         <div className="container">
           <div className="center mb70 Sponsors__text-box">
             <h2 className="app-heading2">Get Started With Paddle Today</h2>
@@ -280,16 +282,18 @@ const Home = () => {
       </section>
       <section className="Subscribe">
         <div className="container">
-          <div className="flex-row justify-content-between align-items-center Subscribe__items">
-            <div className="Subscribe__text-box">
-              <h2 className="app-heading2">
-                Subscribe Now for Get Special Features!
-              </h2>
-              <p className="app-paragraph1">
-                Praesent mollis lobortis nisl nec laoreet.
-              </p>
+          <div className="Subscribe__inner">
+            <div className="flex-row justify-content-between align-items-center Subscribe__items">
+              <div className="Subscribe__text-box">
+                <h2 className="app-heading2">
+                  Subscribe Now for Get Special Features!
+                </h2>
+                <p className="app-paragraph1">
+                  Praesent mollis lobortis nisl nec laoreet.
+                </p>
+              </div>
+              <Button type="solid">Subscribe Now</Button>
             </div>
-            <Button type="solid">Subscribe Now</Button>
           </div>
         </div>
       </section>

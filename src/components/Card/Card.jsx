@@ -53,11 +53,11 @@ const Card = ({
       <div className="flex-row align-items-center mb20">
         <div className="flex-row align-items-center flex1">
           <img className="CardTestimony__image mr10" src={image} alt="user1" />
-          <div className="flex-column align-content-center">
-            <span className="app-heading3" style={{ marginBottom: "-10px" }}>
-              {name}
+          <div className="flex-column ">
+            <span className="app-heading3 CardTestimony__name">{name}</span>
+            <span className="app-paragraph2 cardTestimony__location">
+              {location}
             </span>
-            <span className="app-paragraph2">{location}</span>
           </div>
         </div>
         <div className="flex-row align-items-center">

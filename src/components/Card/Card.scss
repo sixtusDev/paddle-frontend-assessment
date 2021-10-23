@@ -7,7 +7,7 @@
   height: 65rem;
 
   &__image {
-    height: 20rem;
+    width: 60%;
   }
 }
 
@@ -15,8 +15,14 @@
   border: 2px solid #dddddd;
   border-radius: 4px;
   padding: 3rem;
+
+  &__name,
+  &__location {
+    line-height: 1;
+  }
+
   &__image {
-    height: 6rem;
+    height: 5rem;
   }
 }
 
