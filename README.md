@@ -10,7 +10,7 @@ This is the solution of Peddle Frontend Assessment. The hompage is the design of
 ### Bellow are the features of the app and coding best practices used:
 
 <ul>
-<li>The App is fully responsive. It can adapt to different viewport</li>
+<li>The App is fully responsive. It can adapt to different viewport [Extra Large screens, Tvs, Desktops, Laptops, Tablets, Phones]</li>
 <li>Modern design concept was used to make the app catchy in eyes</li>
 <li>/github route for fetching the most starred repo in the last 30 days</li>
 <li>BEM — Block Element Modifier methodology was used in styling the app</li>
@@ -23,7 +23,7 @@ This is the solution of Peddle Frontend Assessment. The hompage is the design of
 <p>App was deployed on netlify after development</p>
 <p>Below is the live demo of the app</p>
 
-### <a href="https://bus-seat-reservation-app.netlify.app/">Live Demo</a>
+### <a href="https://peddlefrontend.netlify.app">Live Demo</a>
 
 <br/>
 
