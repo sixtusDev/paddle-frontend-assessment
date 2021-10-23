@@ -19,6 +19,7 @@ const Github = () => {
       const { data } = await getMostStarredRepos(pageNumber);
       setMostStarredRepos(data.items);
       setPageCount(data.total_count);
+      window.scroll(0, 0);
     } catch (error) {
       console.log(error.response);
       notification.error({
