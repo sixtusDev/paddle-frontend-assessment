@@ -1,0 +1,24 @@
+.Github {
+  padding: 2rem 0 20rem 0;
+
+  &__card-wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__card {
+    // This style rule overrides the default border
+    // and radius of ant design Card component hence
+    // the reason for usin !important
+    border: 2px solid #dddddd !important;
+    border-radius: 1rem !important;
+  }
+
+  &__card-img {
+    height: 15rem;
+  }
+}

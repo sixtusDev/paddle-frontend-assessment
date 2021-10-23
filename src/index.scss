@@ -75,14 +75,18 @@ body {
   border-radius: 50%;
   text-align: center;
   background-color: var(--app-color);
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.arrow-right-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.badge {
+  background-color: var(--app-color);
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  color: var(--color-grey1);
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .center {
