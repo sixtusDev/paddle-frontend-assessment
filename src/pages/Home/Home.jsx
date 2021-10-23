@@ -91,10 +91,10 @@ const Home = () => {
       <section className="Features" id="about">
         <div className="container">
           <Row gutter={20}>
-            <Col xs={24} md={8} className="mb30">
+            <Col xs={24} md={12} className="mb30">
               <Image preview={false} src={pianoImage} />
             </Col>
-            <Col xs={24} md={8}>
+            <Col xs={24} md={12}>
               <div className="Features__right">
                 <h2 className="app-heading2">Features We Provide For You</h2>
                 <p className="app-paragraph1">

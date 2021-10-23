@@ -4,20 +4,28 @@
 ![Peddle](./src/assets/banner2.png)
 
 <p>
-This is the solution of Peddle Frontend Assessment. The hompage is the design of the landing page being transformed from a figma design. The /Github page is the most starred of List the most starred Github repos that were created in the last 30 days gotten from Github API.
+This is the solution of Peddle Frontend Assessment. The hompage is the design of the landing page being transformed from a figma design. The /github page is the most starred of List the most starred Github repos that were created in the last 30 days gotten from Github API.
 </p>
 
-### Bellow are the features of the app:
+### Bellow are the features of the app and coding best practices used:
 
 <ul>
 <li>The App is fully responsive. It can adapt to different viewport</li>
 <li>Modern design concept was used to make the app catchy in eyes</li>
+<li>/github route for fetching the most starred repo in the last 30 days</li>
+<li>BEM — Block Element Modifier methodology was used in styling the app</li>
+<li>Build reusable components</li>
+<li>React hooks was used used in order to keep all components as a functional component</li>
+<li>DRY - Don't Repeat Yourself principle was used</li>
 </ul>
 <br />
 
+<p>App was deployed on netlify after development</p>
 <p>Below is the live demo of the app</p>
 
 ### <a href="https://bus-seat-reservation-app.netlify.app/">Live Demo</a>
+
+<br/>
 
 ### Stacks and Technologies used in Developing the App
 
