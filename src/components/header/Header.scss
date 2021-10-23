@@ -1,7 +1,23 @@
 .Header {
-  @media (max-width: 120rem) {
+  @media (max-width: 1200px) {
     padding: 0 3rem;
   }
+
+  &__drawer-icon {
+    width: 3.5rem;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  &__nav {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   &__nav-link {
     line-height: 1.9;
     color: var(--color-grey2);
@@ -9,6 +25,12 @@
 
     &:not(:last-child) {
       margin-right: 3rem;
+    }
+  }
+
+  &__cta {
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 
