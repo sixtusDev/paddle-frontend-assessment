@@ -1,12 +1,22 @@
 .Github {
   padding: 2rem 0 10rem 0;
 
+  @media (max-width: 800px) {
+    padding: 2rem 3rem 10rem 3rem;
+  }
+
   &__card-wrapper {
     max-width: 80rem;
     margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: 3rem;
+    }
+  }
+
+  &__flex {
+    @media (max-width: 480px) {
+      flex-wrap: wrap;
     }
   }
 

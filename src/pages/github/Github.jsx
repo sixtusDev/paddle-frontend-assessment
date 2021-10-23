@@ -55,7 +55,7 @@ const Github = () => {
           }) => (
             <div className="Github__card-wrapper" id={id}>
               <Card className="Github__card">
-                <div className="flex-row align-items-center">
+                <div className="Github__flex flex-row align-items-center ">
                   <div className="mr20">
                     <img
                       className="Github__card-img"
@@ -63,12 +63,15 @@ const Github = () => {
                       src={owner.avatar_url}
                     />
                   </div>
-                  <div className="flex-column">
+                  <div
+                    className="flex-column flex-wrap"
+                    // style={{ maxHeight: "1000px" }}
+                  >
                     <span className="app-heading2">{name}</span>
                     <span className="app-paragraph1 mb10">
                       {description || "There is no description for this repo"}
                     </span>
-                    <div className="flex-row align-items-center">
+                    <div className="flex-row align-items-center flex-wrap">
                       <div className="mr10">
                         <span className="badge mr10">
                           Stars: {stargazers_count}
