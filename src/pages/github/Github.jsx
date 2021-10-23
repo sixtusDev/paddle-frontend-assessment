@@ -53,7 +53,7 @@ const Github = () => {
             stargazers_count,
             open_issues_count,
           }) => (
-            <div className="Github__card-wrapper" id={id}>
+            <div className="Github__card-wrapper" key={id}>
               <Card className="Github__card">
                 <div className="Github__flex flex-row align-items-center ">
                   <div className="mr20">
@@ -67,7 +67,7 @@ const Github = () => {
                     className="flex-column flex-wrap"
                     // style={{ maxHeight: "1000px" }}
                   >
-                    <span className="app-heading2">{name}</span>
+                    <span className="app-heading3">{name}</span>
                     <span className="app-paragraph1 mb10">
                       {description || "There is no description for this repo"}
                     </span>

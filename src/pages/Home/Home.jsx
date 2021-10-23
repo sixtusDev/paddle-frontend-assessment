@@ -88,7 +88,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="Features">
+      <section className="Features" id="about">
         <div className="container">
           <Row gutter={20}>
             <Col xs={24} md={8} className="mb30">
@@ -132,7 +132,7 @@ const Home = () => {
           </Row>
         </div>
       </section>
-      <section className="Plan">
+      <section className="Plan" id="pricing">
         <div className="container">
           <div className="center Plan__text-box">
             <h2 className="app-heading2">Choose Your Plan</h2>
@@ -149,9 +149,9 @@ const Home = () => {
                   icon={checkIcon}
                   texts={[
                     "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
+                    "Mauris sem nequ",
+                    "Mauris sem nequr",
+                    "Mauris sem nequw",
                   ]}
                   plan="Free Plan"
                   type="plan"
@@ -162,11 +162,11 @@ const Home = () => {
                   image={priceImage2}
                   icon={checkIcon}
                   texts={[
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
+                    "Mauris sem newe",
+                    "Mauris sem neqwe",
+                    "Mauris sem neqfe",
+                    "Mauris sem neqae",
+                    "Mauris sem neqxe",
                   ]}
                   plan="Standard Plan"
                   type="plan"
@@ -178,12 +178,12 @@ const Home = () => {
                   image={priceImage3}
                   icon={checkIcon}
                   texts={[
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
-                    "Mauris sem neque",
+                    "Mauris sem nehue",
+                    "Mauris sem njque",
+                    "Mauris sem nvque",
+                    "Mauris sem noque",
+                    "Mauris sem nzque",
+                    "Mauris sem nmque",
                   ]}
                   plan="Premium Plan"
                   type="plan"
@@ -216,7 +216,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="Testimony">
+      <section className="Testimony" id="testimony">
         <div className="container">
           <div className="Testimony__text-box center">
             <h2 className="app-heading2">

@@ -29,7 +29,7 @@ const Card = ({
         <h3 className="app-heading3 mb30">{plan}</h3>
         <div>
           {texts.map((text) => (
-            <div>
+            <div key={text}>
               <img src={icon} alt="icon" className="mr20" />
               <span className="app-paragraph1">{text}</span>
             </div>
