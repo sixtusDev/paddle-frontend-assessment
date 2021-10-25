@@ -13,6 +13,10 @@
     padding: 0 3rem;
   }
 
+  @media (max-width: 575px) {
+    font-size: 1.2rem;
+  }
+
   &__inner {
     padding: 5rem 2rem;
     max-width: 115rem;
@@ -20,6 +24,11 @@
     border-radius: 1rem;
     border-radius: 10px;
     box-shadow: 0 2rem 4rem rgba($color: #000, $alpha: 0.1);
+
+    @media (max-width: 575px) {
+      padding: 3rem;
+      max-width: 40rem;
+    }
   }
 
   &__icon {
@@ -27,7 +36,21 @@
   }
 
   &__details {
-    border-right: 2px solid #eeeff2 !important;
+    &:not(:last-child) {
+      border-right: 2px solid #eeeff2;
+
+      @media (max-width: 575px) {
+        border: none;
+      }
+    }
+
+    > div {
+      @media (max-width: 575px) {
+        justify-content: space-around;
+        margin-bottom: 2rem;
+        align-items: center;
+      }
+    }
   }
 }
 
@@ -87,7 +110,7 @@
     max-width: 125rem;
     margin: 0 0 0 auto;
 
-    @media (max-width: 115rem) {
+    @media (max-width: 1150px) {
       max-width: 115rem;
       margin: 0 auto;
     }

@@ -63,10 +63,7 @@ const Github = () => {
                       src={owner.avatar_url}
                     />
                   </div>
-                  <div
-                    className="flex-column flex-wrap"
-                    // style={{ maxHeight: "1000px" }}
-                  >
+                  <div className="flex-column flex-wrap">
                     <span className="app-heading3">{name}</span>
                     <span className="app-paragraph1 mb10">
                       {description || "There is no description for this repo"}

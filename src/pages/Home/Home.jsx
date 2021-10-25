@@ -51,8 +51,8 @@ const Home = () => {
         <div className="container">
           <div className="Stats__inner">
             <Row>
-              <Col span={8}>
-                <div className="flex-row align-items-center justify-content-center Stats__details">
+              <Col xs={{ span: "24" }} sm={8} className="Stats__details">
+                <div className="flex-row align-items-center justify-content-center ">
                   <div className="mr20">
                     <Image preview={false} src={userIcon} />
                   </div>
@@ -62,8 +62,8 @@ const Home = () => {
                   </div>
                 </div>
               </Col>
-              <Col span={8}>
-                <div className="flex-row align-items-center justify-content-center Stats__details">
+              <Col xs={{ span: "24" }} sm={8} className="Stats__details">
+                <div className="flex-row align-items-center justify-content-center ">
                   <div className="mr20">
                     <Image preview={false} src={locationIcon} />
                   </div>
@@ -73,8 +73,8 @@ const Home = () => {
                   </div>
                 </div>
               </Col>
-              <Col span={8}>
-                <div className="flex-row align-items-center justify-content-center">
+              <Col xs={{ span: "24" }} sm={8} className="Stats__details">
+                <div className="flex-row align-items-center justify-content-center ">
                   <div className="mr20">
                     <Image preview={false} src={serverIcon} />
                   </div>

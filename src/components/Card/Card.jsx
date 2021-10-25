@@ -1,4 +1,3 @@
-import { Image } from "antd";
 import Button from "../Button/Button";
 
 import "./Card.scss";
